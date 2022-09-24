@@ -55,41 +55,43 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+           
+            <div ngbDropdown class="nav-item">
+                
+                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Drawing</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        
-                       
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
+               
+                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
+                   
+                  <a ngbDropdownItem>Action</a>
+                  <a ngbDropdownItem>Another Action</a>
+                  <a ngbDropdownItem>Something else here</a>
                 </div>
-            </li>
+              </div>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+              <div ngbDropdown class="nav-item">
+                
+                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>DataEntry</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
+               
+                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
+                   
+                  <a ngbDropdownItem>Action</a>
+                  <a ngbDropdownItem>Another Action</a>
+                  <a ngbDropdownItem>Something else here</a>
                 </div>
-            </li>
+              </div>
+   
+   
+
+           
+
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -97,43 +99,61 @@
             <!-- Heading -->
             <div class="sidebar-heading">
                 Alternate
+                
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
+            <div ngbDropdown class="nav-item">
+                
+                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Insert spec</span>
+                    <span>Insert Spec</span>
                 </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
+               
+                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
+                   
+                  <a ngbDropdownItem>Action</a>
+                  <a ngbDropdownItem>Another Action</a>
+                  <a ngbDropdownItem>Something else here</a>
                 </div>
-            </li>
+              </div>
 
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+              <div ngbDropdown class="nav-item">
+                
+                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Files</span></a>
-            </li>
+                    <span>Files</span>
+                </a>
+               
+                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
+                   
+                  <a ngbDropdownItem>Import file</a>
+                  <a ngbDropdownItem>Update file</a>
+                  
+                </div>
+              </div>
+   
+
+              
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+            <div ngbDropdown class="nav-item">
+                
+                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Upload Excel</span></a>
-            </li>
-
+                    <span>Upload Excel</span>
+                </a>
+               
+                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
+                   
+                  <a ngbDropdownItem>Action</a>
+                  <a ngbDropdownItem>Another Action</a>
+                  <a ngbDropdownItem>Something else here</a>
+                </div>
+              </div>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -315,7 +335,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Username</span>
                                 <img class="img-profile rounded-circle"
-                                    src="../app.component.css">
+                                    src="/assets/img/images.png">
                             </a>
                             
                             <!-- Dropdown - User Information -->
@@ -351,8 +371,9 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Import File</h1>
-                        
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
                     
@@ -365,16 +386,16 @@
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Enter Drawing Number</h6>
-                                   
+                                    <br>
                                     <div>
-                                        
                                         <!-- Topbar Search -->
                                       <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                           <div class="input-group">
                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."  aria-label="Search" aria-describedby="basic-addon2">
                                                <div class="input-group-append">
-                                                    <button class="btn btn-primary" type="button">Import</button>
-                                                    <button class="btn btn-primary" type="button">Update</button>
+                                                    <button class="btn btn-primary" type="button">
+                                                        <i class="fas fa-search fa-sm"></i>
+                                                    </button>
                                                 </div>
                                             </div>
                                        </form>

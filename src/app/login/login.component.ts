@@ -14,14 +14,10 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
    
   }
-
-  goToPage(pageName: string): void {
-    this.router.navigate([`${pageName}`]);
+                                                                                                                                                                                                                             
+  navigate(){
+    this.router.navigate(['./main'])
   }
-
- 
- 
- 
 
  
 }

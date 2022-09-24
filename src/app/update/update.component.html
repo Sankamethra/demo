@@ -55,7 +55,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-
+           
             <div ngbDropdown class="nav-item">
                 
                 <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -131,7 +131,7 @@
                    
                   <a ngbDropdownItem>Import file</a>
                   <a ngbDropdownItem>Update file</a>
-                  
+                 
                 </div>
               </div>
    
@@ -156,10 +156,10 @@
               </div>
 
             <!-- Divider -->
-            <hr  class="sidebar-divider d-none d-md-block">
+            <hr class="sidebar-divider d-none d-md-block">
 
             <!-- Sidebar Toggler (Sidebar) -->
-            <div  class="text-center d-none d-md-inline">
+            <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
@@ -372,9 +372,8 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">Update File</h1>
+                        
                     </div>
 
                     
@@ -400,55 +399,214 @@
                                                 </div>
                                             </div>
                                        </form>
+                                       
                                     </div>
                                 </div>
+                                <br>
+                                <div>
+                                    <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Part Name</label>
+                                          <select id="exampleInputPassword1" class="form-control" >
+                                            <option value="">Select the Part Name</option>
+                                            <option value="1P  DN100RB CL150 BODY">1P  DN100RB CL150 BODY</option>
+                                            <option value="1P DN 100 RB CL 300 BODY ">1P DN 100 RB CL 300 BODY </option>
+                                            <option value="1P DN 80 RB CL 150 BODY">1P DN 80 RB CL 150 BODY</option>
+                                            <option value="1P DN 80 RB CL 300 BODY">1P DN 80 RB CL 300 BODY</option>
+                                            <option value="1P DN150RB CL150 BODY">1P DN150RB CL150 BODY</option>
+                                            <option value="1P DN150RB CL300 BODY">1P DN150RB CL300 BODY</option>
+                                            <option value="1P DN15FB CL150 BODY">1P DN15FB CL150 BODY</option>
+                                            <option value="1P DN15FB CL300 BODY">1P DN15FB CL300 BODY</option>
+                                            <option value="1P DN20RB CL150 BODY">1P DN20RB CL150 BODY</option>
+                                            <option value="1P DN20RB CL300 BODY">1P DN20RB CL300 BODY</option>
+                                            <option value="1P DN40RB CL300 BODY">1P DN40RB CL300 BODY</option>
+                                            <option value="1P DN50FB CL300 BODY">1P DN50FB CL300 BODY</option>
+                                            <option value="1P DN50RB CL150 BODY">1P DN50RB CL150 BODY</option>
+                                            <option value="1P DN65RB CL150 BODY"> 1P DN65RB CL150 BODY</option>
+                                            <option value="1P DN65RB CL300 BODY"> 1P DN65RB CL300 BODY</option>
+                                            <option value="1PDN25RB CL150 BODY">1PDN25RB CL150 BODY</option>
+                                            <option value="1PDN25RB CL300 BODY">1PDN25RB CL300 BODY</option>
+                                            <option value="1PDN40RB CL150 BODY">1PDN40RB CL150 BODY</option>
+                                            <option value="2P DN 15 FB CL150 CONNECTOR"> 2P DN 15 FB CL150 CONNECTOR</option>
+                                            <option value="2P DN15FB CL150 BODY ">2P DN15FB CL150 BODY </option>
+                                            <option value="2P DN20FB  CL300 BODY">2P DN20FB  CL300 BODY</option>
+                                            <option value="2P DN20FB CL150 BODY">2P DN20FB CL150 BODY</option>
+                                            <option value="2P DN20FB CLASS 300 CONNECTOR">2P DN20FB CLASS 300 CONNECTOR</option>
+                                            <option value="2P DN25FB CL150 BODY">2P DN25FB CL150 BODY</option>
+                                            <option value="2P DN25FB CL150 CONNECTOR">2P DN25FB CL150 CONNECTOR</option>
+                                            <option value="2P DN25FB CL300 BODY">2P DN25FB CL300 BODY</option>
+                                            <option value="2P DN25FB CL300 CONNECTOR">2P DN25FB CL300 CONNECTOR</option>
+                                            <option value="2PDN15FB CL300 BODY ">2PDN15FB CL300 BODY </option>
+                                            <option value="2PDN15FB CL300 CONNECTOR">2PDN15FB CL300 CONNECTOR</option>
+                                            <option value="2PDN20FB CL150 CONNECTOR">2PDN20FB CL150 CONNECTOR</option>
+                                                                                   
+                                            <option value="">None</option>
+                                          </select>
+                                          
+                                        </div>
+                                        <div class="form-group"> 
+                                          <label for="exampleInputPassword1">Material</label>
+                                          <select id="exampleInputPassword1" class="form-control" >
+                                            <option value="">Select the Material</option>
+                                            <option value="CF8M">CF8M</option>
+                                            <option value="CF8M SAND">CF8M SAND</option>
+                                            <option value="">None</option>
+                                          </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Sequence Name</label>
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select the Sequence</option>
+                                                <option value="BORE FINISHING">BORE FINISHING</option>
+                                                <option value="OD FINISHING">OD FINISHING</option>
+                                                <option value="OD ROUGHING">OD ROUGHING</option>
+                                                <option value="THREADING">THREADING</option>
+                                                <option value="">None</option>
+                                            </select>
+                                          </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Operation</label>
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select the Operation</option>
+                                                <option value="N2">N2</option>
+                                                <option value="N3">N3</option>
+                                                <option value="N4">N4</option>
+                                                <option value="N5">N5</option>
+                                                <option value="N7">N7</option>
+                                                <option value="N8">N8</option>
+                                                <option value="">None</option>
+                                              </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Bar</label>
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select the Options</option>
+                                                <option value="ECLNR 2525-M12 ">ECLNR 2525-M12 </option>
+                                                <option value=" ETJNR 2525-M12"> ETJNR 2525-M12</option>
+                                               
+                                                
+                                                <option value="">None</option>
+                                              </select>
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">InsertSpec</label>
+                                            
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select the Options</option>
+                                                <option value="CCMT 09T308 HQ PR1125">CCMT 09T308 HQ PR1125</option>
+                                                <option value="CNMG120408-M3 35MT">CNMG120408-M3 35MT</option>
+                                                <option value="TNMG 160404 BM FQQ (2319)7125">TNMG 160404 BM FQQ (2319)7125</option>
+                                                
+                                                <option value="">None</option>
+                                              </select>
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Number of Edge</label>
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select Number of Edge</option>
+                                                <option value="2">2</option>
+                                                <option value="4">4</option>
+                                                <option value="6">6</option>
+                                                
+                                                <option value="">None</option>
+                                              </select>
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Edge Life</label>
+                                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter the edge life">
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Make</label>
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select the Options</option>
+                                                <option value="Q & Q">Q & Q</option>
+                                                <option value="SECCO">SECCO</option>
+                                                <option value="KYOCERA">KYOCERA</option>
+                                                
+                                                <option value="">None</option>
+                                              </select>
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Supplier</label>
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select the Supplier</option>
+                                                <option value="Q&Q SOLUTIONS">Q&Q SOLUTIONS</option>
+                                                <option value="SRI MAHAGANAPATHY MARKETING">SRI MAHAGANAPATHY MARKETING</option>
+                                                <option value="M.K. TOOLING">M.K. TOOLING</option>
+                                                
+                                                <option value="">None</option>
+                                              </select>
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Rate</label>
+                                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter the Rate">
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Insert Life (Must be in number)</label>
+                                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Insert Life">
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1" >Enter Alternative Insert </label>
+                                                                                       
+                                            <select id="exampleInputPassword1" class="form-control" >
+                                                <option value="">Select the Insert</option>
+                                                <option value="16 IR AG 60 AH725">16 IR AG 60 AH725</option>
+                                                <option value="CCMT 09T304 PS T9125">CCMT 09T304 PS T9125</option>
+                                                <option value="CCMT 09T308 TS 9125">CCMT 09T308 TS 9125</option>
+                                                <option value="CNMG 120404N-GU A1464">CNMG 120404N-GU A1464</option>
+                                                <option value="CNMG 120408 8125">CNMG 120408 8125</option>
+                                                <option value="CNMG 120408 MS PR1125">CNMG 120408 MS PR1125</option>
+                                                <option value="CNMG 120412 1464">CNMG 120412 1464</option>
+                                                <option value="TNMG 160404 BM FQQ (2319)7125">TNMG 160404 BM FQQ (2319)7125</option>
+                                                <option value="">None</option>
+                                              </select>
+                                            
+                                          </div>
+
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1" >No of Edge for Alternative Insert  (Must not be greater than 6)</label>
+                                            <input type="number" min="1" max="6" class="form-control" id="exampleInputPassword1" placeholder="Enter the number of edge">
+                                            
+                                          </div>
+
+                                          
+                                      
+                                          
+                        
+                                        <button type="submit" class="btn btn-primary">Update</button>
+                                      
+                              
                                
-                            </div>
-                        </div>
+                           
+                        
 
-                       
-                    </div>
-
-                    
-                    </div>
-
-                </div>
+                     
                 <!-- /.container-fluid -->
 
-            </div>
             <!-- End of Main Content -->
 
 
-        </div>
+     
         <!-- End of Content Wrapper -->
 
     
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+    
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Bootstrap core JavaScript-->
     <script src="css/vendor/jquery/jquery.min.js"></script>
@@ -467,6 +625,5 @@
     <script src="css/js/demo/chart-area-demo.js"></script> -->
     <script src="css/js/demo/chart-pie-demo.js"></script> -->
 
-</body>
 
-</html>
+

@@ -10860,6 +10860,11 @@ a:focus {
   }
 }
 
+.bg-image{
+  background: url("/assets/img/login.png");
+  background-position: center;
+  background-size: cover;
+}
 .bg-login-image {
   background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
   background-position: center;
