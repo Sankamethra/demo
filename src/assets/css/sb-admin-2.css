@@ -6606,6 +6606,10 @@ button.bg-dark:focus {
   border-radius: 0.3rem !important;
 }
 
+.rounded-logocircle {
+  border-radius: 50% !important;
+}
+
 .rounded-circle {
   border-radius: 50% !important;
 }
@@ -9899,6 +9903,16 @@ a:focus {
   animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
 
+.bg-logoimage{
+  background: url("/assets/img/logo.jpg");
+  
+}
+.landing-page{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+
+}
+
 .bg-gradient-primary {
   background-color: #4e73df;
   background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
@@ -10167,8 +10181,21 @@ a:focus {
   width: 2rem;
 }
 
+.img-logo {
+  height: 100px;
+  width: 100px;
+  /* padding-top: 10px; */
+  /* padding-left: 200px; */
+}
+.navbar-image{
+  padding-top: 30px;
+}
 .topbar {
   height: 4.375rem;
+}
+
+.topbarlogo {
+  height: 2.375rem;
 }
 
 .topbar #sidebarToggleTop {
@@ -10202,6 +10229,13 @@ a:focus {
 
 .topbar .nav-item .nav-link {
   height: 4.375rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+}
+
+.topbar .nav-item .nav-link-logo {
+  height: 2.375rem;
   display: flex;
   align-items: center;
   padding: 0 0.75rem;
@@ -10324,6 +10358,11 @@ a:focus {
   min-height: 100vh;
 }
 
+.sidebarlogo {
+  width: 4.5rem;
+  min-height: 80vh;
+}
+
 .sidebar .nav-item {
   position: relative;
 }
@@ -10336,6 +10375,12 @@ a:focus {
   text-align: center;
   padding: 0.75rem 1rem;
   width: 6.5rem;
+}
+
+.sidebar .nav-item .nav-link-logo {
+  text-align: center;
+  padding: 0.75rem 1rem;
+  width: 4.5rem;
 }
 
 .sidebar .nav-item .nav-link span {
