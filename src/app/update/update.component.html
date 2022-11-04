@@ -58,7 +58,7 @@
            
             <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/main']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Drawing</span>
@@ -74,9 +74,9 @@
 
               <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/main']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-wrench"></i>
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>DataEntry</span>
                 </a>
                
@@ -105,9 +105,9 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/main']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-folder"></i>
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>Insert Spec</span>
                 </a>
                
@@ -121,17 +121,17 @@
 
               <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/main']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>Files</span>
                 </a>
                
                 <div ngbDropdownMenu aria-labelledby="dropdownMenu">
                    
-                  <a ngbDropdownItem>Import file</a>
-                  <a ngbDropdownItem>Update file</a>
-                 
+                  <a ngbDropdownItem>Import File</a>
+                  <a [routerLink]="['/update']" ngbDropdownItem>Update File</a>
+                  
                 </div>
               </div>
    
@@ -141,18 +141,13 @@
             <!-- Nav Item - Tables -->
             <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a  [routerLink]="['/upload']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#!" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Upload Excel</span>
+                    <i  class="fas fa-fw fa-table"></i>
+                    <span >Upload Excel</span>
                 </a>
                
-                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
-                   
-                  <a ngbDropdownItem>Action</a>
-                  <a ngbDropdownItem>Another Action</a>
-                  <a ngbDropdownItem>Something else here</a>
-                </div>
+                
               </div>
 
             <!-- Divider -->

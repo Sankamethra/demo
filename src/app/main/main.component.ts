@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Route,Router } from '@angular/router';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthService } from '../auth.service';
+import { User } from '../datatype';
+
 
 @Component({
   selector: 'app-main',
@@ -13,16 +16,29 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 export class MainComponent implements OnInit {
 
-  constructor(private router: Router) { }
+ 
+public data:any
+ public status:any
+
+ 
+  public value:any=[{
+    drawingnumber:String,
+    componentname:String
+}]
+
+  constructor(private auth:AuthService,private route:Router) { }
 
   ngOnInit(): void {
     
   }
 
-  goToPage(pageName: string): void{
-    this.router.navigateByUrl('./file.component.html');
+  demo(){
+    this.auth.getdata(this.data).subscribe(res=>{
+      this.value=res
+      console.log(typeof(this.value))
+      console.log(this.value)
+    })
   }
-
   
 
 }

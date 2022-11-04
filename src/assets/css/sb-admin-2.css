@@ -212,6 +212,11 @@ table {
   border-collapse: collapse;
 }
 
+padding{
+  padding-right: 300px;
+
+}
+
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -7903,6 +7908,8 @@ button.bg-dark:focus {
   padding-right: 1.5rem !important;
 }
 
+
+
 .pb-4,
 .py-4 {
   padding-bottom: 1.5rem !important;
@@ -7922,6 +7929,9 @@ button.bg-dark:focus {
   padding-top: 3rem !important;
 }
 
+.pz-5{
+  padding-right: 50px;
+}
 .pr-5,
 .px-5 {
   padding-right: 3rem !important;
@@ -9909,7 +9919,7 @@ a:focus {
 }
 .landing-page{
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #4e73df;
 
 }
 

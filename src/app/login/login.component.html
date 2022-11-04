@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,6 +21,10 @@
 
 </head>
 
+<script>
+    window.alert("login succesful")
+</script>
+
 <body class="bg-gradient-primary">
 
     <div class="container">
@@ -44,12 +47,12 @@
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                            <input [(ngModel)]="logdata.email" name="email" type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Enter Email Address...">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
+                                            <input [(ngModel)]="logdata.password" name="password" type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password">
                                         </div>
                                         <div class="form-group">
@@ -60,12 +63,10 @@
                                             </div>
                                         </div>
                                         
-                                        <button  class="btn btn-primary btn-user btn-block"  [routerLink]="['/main']">
+                                        <button (click)="log()"  class="btn btn-primary btn-user btn-block"  [routerLink]="['/main']">
                                             Login
                                         </button>
-                                        <button  class="btn btn-primary btn-user btn-block"  [routerLink]="['/main']">
-                                            Register
-                                        </button>
+                                        
                                         
                                     </form>
                                     <hr>
@@ -98,3 +99,6 @@
 </body>
 
 </html>
+
+
+

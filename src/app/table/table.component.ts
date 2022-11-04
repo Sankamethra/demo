@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { map, filter, scan } from 'rxjs/operators';
+import { AuthService } from '../auth.service';
 import { Observable, Subject, asapScheduler, pipe, of, from, interval, merge, fromEvent } from 'rxjs';
 
 
@@ -13,18 +14,12 @@ import { Observable, Subject, asapScheduler, pipe, of, from, interval, merge, fr
 
 export class TableComponent implements OnInit {
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
+  constructor(private auth:AuthService,private route:Router) { }
 
   
 
   ngOnInit(): void {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-  ).subscribe(() => {
-      console.log(this.activatedRoute.root);
-  });
-
-  
+     
   }
 
   

@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
@@ -10,43 +9,22 @@
     rel="stylesheet">
 
 </head>
-<body class="langind-page">
-    <nav class="navbar navbar-dark landing-page ">
-        <div class="navbar-image container px-5 ">
-            <a class="navbar-brand " href="#!"></a>
-            <img class="img-logo rounded-logocircle float-left"src="/assets/img/logo.jpg">
-            
-            
-        </div>
-    </nav>
-    <!-- Header-->
-    <header class="landing-page py-5">
+
+
+<body >
+    <nav>
+      <header class="landing-page py-5">
         <div class="container px-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-6">
-                    <div class="text-center my-5">
-                        <h1 class="display fw-bolder text-white mb-2">SAKTHI GEAR PRODUCTS</h1>
-                            <br><br><br><br><br><br><br>
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Login</a>
-                            <a class="btn btn-outline-light btn-lg px-4" href="#!">Register</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <a routerLink="login" class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Login</a>
+           <a routerLink="register" class="btn btn-primary btn-lg px-4 me-sm-3" href="#!">Register</a>
+           
+                
+        </div>
         
-    </header>
-    
-   
-             
-    <!-- Testimonials section-->
-   
-    <!-- Contact section-->
-    
-    <!-- Footer-->
-    <footer class="py-5 landing-page">
-        <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
-    </footer>
-    <!-- Bootstrap core JS-->
+      </header>
+     
+    </nav>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
@@ -56,10 +34,7 @@
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-   
-    
-    
-    
-    
+
+    <router-outlet></router-outlet>
 </body>
 </html>

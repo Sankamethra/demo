@@ -58,7 +58,7 @@
 
             <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/main']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Drawing</span>
@@ -74,9 +74,9 @@
 
               <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/data']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-wrench"></i>
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>DataEntry</span>
                 </a>
                
@@ -105,9 +105,9 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/main']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-folder"></i>
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>Insert Spec</span>
                 </a>
                
@@ -121,16 +121,16 @@
 
               <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a [routerLink]="['/main']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-cog"></i>
                     <span>Files</span>
                 </a>
                
                 <div ngbDropdownMenu aria-labelledby="dropdownMenu">
                    
-                  <a ngbDropdownItem>Import file</a>
-                  <a ngbDropdownItem>Update file</a>
+                  <a ngbDropdownItem>Import File</a>
+                  <a [routerLink]="['/update']" ngbDropdownItem>Update File</a>
                   
                 </div>
               </div>
@@ -141,18 +141,13 @@
             <!-- Nav Item - Tables -->
             <div ngbDropdown class="nav-item">
                 
-                <a ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a  [routerLink]="['/upload']" ngbDropdownToggle class="nav-link collapsed" id="dropdownMenu" href="#!" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Upload Excel</span>
+                    <i  class="fas fa-fw fa-table"></i>
+                    <span >Upload Excel</span>
                 </a>
                
-                <div ngbDropdownMenu aria-labelledby="dropdownMenu">
-                   
-                  <a ngbDropdownItem>Action</a>
-                  <a ngbDropdownItem>Another Action</a>
-                  <a ngbDropdownItem>Something else here</a>
-                </div>
+                
               </div>
 
             <!-- Divider -->
@@ -198,12 +193,12 @@
                                 aria-labelledby="searchDropdown">
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
+                                        <input [(ngModel)]="this.data" name="data" type="text" class="form-control bg-light border-0 small"
                                             placeholder="Search for..." aria-label="Search"
                                             aria-describedby="basic-addon2">
                                         <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
+                                            <button (click)="demo()"   class="btn btn-primary" type="button">
+                                                <i  class="fas fa-search fa-sm"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -395,7 +390,7 @@
                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."  aria-label="Search" aria-describedby="basic-addon2">
                                                <div class="input-group-append">
                                                     <button class="btn btn-primary" type="button">
-                                                        <i class="fas fa-search fa-sm"></i>
+                                                        <i [routerLink]="['/table']" class="fas fa-search fa-sm"></i>
                                                     </button>
                                                 </div>
                                             </div>
@@ -466,7 +461,7 @@
     <!-- Page level custom scripts -->
     <script src="css/js/demo/chart-area-demo.js"></script> -->
     <script src="css/js/demo/chart-pie-demo.js"></script> -->
-
+    <router-outlet></router-outlet>
 </body>
 
 </html>
